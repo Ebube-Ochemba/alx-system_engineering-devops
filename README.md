@@ -1,4 +1,4 @@
-# System Engineering and DevOps - Bash, Scripting...
+# System engineering & DevOps - Bash
 
 > This repository contains programs written for the system engineering and DevOps
 > track at Alx.

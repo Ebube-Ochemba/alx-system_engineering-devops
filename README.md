@@ -5,7 +5,7 @@
 
 ## Description
 
-In this repository, you will find a collection of projects and assignments that cover various topics in Devops. In these projects, I worked with Bash and practiced writing Bash scripts to automate tasks. Each project dives into a specific topic, You'll tackle challenges that encourage you to get creative with solutions.
+In this repository, you will find a collection of projects and assignments that cover various topics in Devops. In these projects, I worked with Bash and practiced writing Bash scripts to automate tasks. Each project dives into a specific topic, I tackled challenges that encouraged me to get creative with solutions.
 
 ## List of Projects
 

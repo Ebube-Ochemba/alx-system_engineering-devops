@@ -1,3 +1,13 @@
 # Shell Basics
 
-In this project, I underwent an introductory crash course in the Shell. I learned how to navigate directories using `cd`, pwd, ls, how to look around using ls, less, and file, and how to manipulate files with cp, mv, rm, and mkdir. Further, I practiced working with the type, which, help, and man commands, implementing wildcards, reading man pages, creating links, and using keyboard shortcuts in Bash.
+> This project is was an introduction to the Shell.
+
+## Introduction
+
+I learnt about built-in commands like `cd`, `pwd`, `ls`... I learnt about the filesystem and how to navigate it.
+I also learnt how to 'look around' using commands like `ls`, `less`, `file`... also, the `ln` command and its usage.
+I also learnt about commands like `type`, `which`, `help`, `man`... implementing wildcards, reading man pages, creating links, setting file permissions and using keyboard shortcuts in Bash.
+
+## Tasks
+
+

@@ -1,6 +1,6 @@
 # Shell Basics
 
-> This project is was an introduction to the Shell.
+> This project was an introduction to the Shell.
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# Shell Permissions
+# Shell, Permissions
 
 > This project was an introduction to the Shell Permissions.
 

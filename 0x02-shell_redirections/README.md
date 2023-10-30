@@ -40,7 +40,7 @@ I learnt abou commands like `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`
 	- Only the names of the files and directories are displayed.
 	- Hidden files included.
 	- One file name per line.
-- [101-gifs](): Bash script that lists all the files with a `.gif` extension in the current directory and all its sub-directories as follows:
+- [101-gifs](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x02-shell_redirections/101-gifs): Bash script that lists all the files with a `.gif` extension in the current directory and all its sub-directories as follows:
 	- Hidden files included.
 	- Only regular files (not directories) listed.
 	- File names displayed without extensions.

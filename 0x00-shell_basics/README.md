@@ -22,4 +22,11 @@ I also learnt about commands like `type`, `which`, `help`, `man`... implementing
 	- User and group ID's displayed numerically.
 - [6-firstdirectory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory): Bash script that creates a directory named holberton in the /tmp/ directory.
 - [7-movethatfile](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/7-movethatfile): Bash script that moves the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
+- [8-firstdelete](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/8-firstdelete): Bash script that deletes the file `betty` in `/tmp/my_first_directory`.
+- [9-firstdirdeletion](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/9-firstdirdeletion): Bash script that deletes the directory `my_first_directory` in the `/tmp` directory.
+- [10-back](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back): Bash script that changes the working directory to the previous one.
+- [11-lists](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/11-lists): Bash script that lists all files, including hidden files, in the current directory, parent of the working directory, and `/boot` directory, using long format.
+- [12-file_type](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/12-file_type): Bash script that prints the type of the file named `iamafile` located in the `/tmp` directory.
+- [13-symbolic_link](13-symbolic_link): Bash script that creates a symbolic link to `/bin/ls`, named `__ls__`.
+- [14-copy_html](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/14-copy_html): Bash script that copies all HTML files from the current working directory to the parent of the working directory, but only those that did not exist in the parent directory or were newer than the versions in the parent working directory.
 - 

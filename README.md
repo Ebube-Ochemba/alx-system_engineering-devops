@@ -16,7 +16,7 @@ In this repository, you will find a collection of projects and assignments that 
 
 ## Built with
 - CLI
-- OS: Ubuntu 14.04 LTS
+- OS: Ubuntu 20.04 LTS
 
 ## Credits
 

@@ -13,7 +13,8 @@ I also learnt about commands like `type`, `which`, `help`, `man`... implementing
 > Each file contains the solution to a task in the project.
 
 - [0-current_working_directory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/0-current_working_directory): Bash script that prints the absolute pathname of the current working directory.
-
-- 
-
+- [1-listit](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit): Bash script that displays the contents list of current directory.
+- [2-bring_me_home](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home): Bash script that changes the working directory to the user's home directory.
+- [3-listfiles](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles): Bash script that displays current directory contents in long format.
+-
 

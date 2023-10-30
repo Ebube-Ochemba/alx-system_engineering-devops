@@ -37,4 +37,4 @@ I also learnt about commands like `type`, `which`, `help`, `man`... implementing
 	- Directory names end with a slash (`/`).
 	- Alpha-ordered, except for the directories `.` and `..` which are listed at the beginning.
 	- Only digits and letters are used to sort - digits come first.
-- [school.mgc](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc): A magic file that can be used with the command `file` to detect School data files.
+- [school.mgc](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc): A magic file that can be used with the command `file` to detect `School` data files.

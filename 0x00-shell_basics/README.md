@@ -21,5 +21,5 @@ I also learnt about commands like `type`, `which`, `help`, `man`... implementing
 	- Long format.
 	- User and group ID's displayed numerically.
 - [6-firstdirectory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory): Bash script that creates a directory named holberton in the /tmp/ directory.
+- [7-movethatfile](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/7-movethatfile): Bash script that moves the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
 - 
-

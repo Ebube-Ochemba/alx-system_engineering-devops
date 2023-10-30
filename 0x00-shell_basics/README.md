@@ -1,4 +1,4 @@
-# Shell Basics
+# Shell, Basics
 
 > This project was an introduction to the Shell.
 

@@ -8,6 +8,12 @@ I learnt about built-in commands like `cd`, `pwd`, `ls`... I learnt about the fi
 I also learnt how to 'look around' using commands like `ls`, `less`, `file`... also, the `ln` command and its usage.
 I also learnt about commands like `type`, `which`, `help`, `man`... implementing wildcards, reading man pages, creating links, setting file permissions and using keyboard shortcuts in Bash.
 
-## Tasks
+## Files
+
+> Each file contains the solution to a task in the project.
+
+- [0-current_working_directory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/0-current_working_directory): Bash script that prints the absolute pathname of the current working directory.
+
+- 
 
 

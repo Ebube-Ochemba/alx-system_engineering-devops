@@ -4,7 +4,7 @@
 
 ## Introduction
 
-I learnt abou commands like `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr`... and thier usage. Things like;
+I learnt about commands like `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr`... and thier usage. Things like;
 - How to redirect standard output to a file and How to get standard input from a file instead of the keyboard.
 - How to combine commands in the Shell.
 - How special characters work and how to filter text from files.

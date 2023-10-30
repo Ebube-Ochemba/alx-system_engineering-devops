@@ -35,5 +35,5 @@ I practiced using expansions, performing arithmetic operations, and utilizing al
 - [101-rot13](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/101-rot13): Bash script that encodes and decodes text using the rot13 encryption.
 - [102-odd](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/102-odd): Bash script that prints every other line from the input, starting with the first line.
 
-- [103-water_and_stir](): Bash script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
+- [103-water_and_stir](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/103-water_and_stir): Bash script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
 	- `WATER` is in base `water`, `STIR` is in base `stir`, and the result is in base `bestchol`.

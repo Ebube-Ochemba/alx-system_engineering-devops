@@ -47,5 +47,5 @@ I learnt abou commands like `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`
 	- Files sorted by byte values, but case insensitive.
 	- One file name per line.
 - [102-acrostic](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x02-shell_redirections/102-acrostic): Bash script that decodes acrostics that use the first letter of each line.
-- [103-the_biggest_fan](): Bash script that parses web server logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+- [103-the_biggest_fan](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x02-shell_redirections/103-the_biggest_fan): Bash script that parses web server logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 	- Ordered by number of requests, with most active hosts or IP's at the top.

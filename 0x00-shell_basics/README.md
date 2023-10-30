@@ -16,5 +16,10 @@ I also learnt about commands like `type`, `which`, `help`, `man`... implementing
 - [1-listit](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit): Bash script that displays the contents list of current directory.
 - [2-bring_me_home](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home): Bash script that changes the working directory to the user's home directory.
 - [3-listfiles](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles): Bash script that displays current directory contents in long format.
--
+- [4-listmorefiles](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/4-listmorefiles): Bash script that displays current directory contents, including hidden files, using long format.
+- [5-listfilesdigitonly](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/5-listfilesdigitonly): Bash script that displays current directory contents, including hidden files, as follows:
+	- Long format.
+	- User and group ID's displayed numerically.
+- [6-firstdirectory](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory): Bash script that creates a directory named holberton in the /tmp/ directory.
+- 
 

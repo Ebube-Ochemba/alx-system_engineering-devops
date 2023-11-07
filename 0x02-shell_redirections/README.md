@@ -2,7 +2,7 @@
 
 > This project was an introduction to Input/Output Redirections and filters.
 
-## Introduction
+## Summary
 
 I learnt about commands like `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr`... and thier usage. Things like;
 - How to redirect standard output to a file and How to get standard input from a file instead of the keyboard.

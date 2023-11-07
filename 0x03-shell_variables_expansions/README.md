@@ -2,7 +2,7 @@
 
 > This project was an introduction to init files, variables and expansions.
 
-## Introduction
+## Summary
 
 I learnt about initialization files, local, global, and reserved variables, and special parameters in the Shell.
 	- How to create, update and delete shell variables.

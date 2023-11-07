@@ -2,7 +2,7 @@
 
 > This project was an introduction to the Shell Permissions.
 
-## Introduction
+## Summary
 
 I learnt about commands like `chmod`, `sudo`, `su`, `choan`, `chgrp` and thier usage.
 Things like;

@@ -10,20 +10,20 @@ I learnt about how to create SSH keys, the advantage of using `#!/usr/bin/env ba
 
 > Each file contains the solution to a task in the project.
 
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
-- []():
+- [1-for_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/1-for_best_school):
+- [1-for_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/1-for_best_school):
+- [2-while_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/2-while_best_school):
+- [3-until_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/3-until_best_school):
+- [4-if_9_say_hi](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/4-if_9_say_hi):
+- [5-4_bad_luck_8_is_your_chance](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/5-4_bad_luck_8_is_your_chance):
+- [6-superstitious_numbers](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/6-superstitious_numbers):
+- [7-clock](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/7-clock):
+- [8-for_ls](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/8-for_ls):
+- [9-to_file_or_not_to_file](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/9-to_file_or_not_to_file):
+- [10-fizzbuzz](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/10-fizzbuzz):
+- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/):
+- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/):
+- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/):
+- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/):
 
 > - [test_files](): A folder of test files. Provided by Alx.

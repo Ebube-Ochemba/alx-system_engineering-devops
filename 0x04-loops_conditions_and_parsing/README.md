@@ -10,7 +10,7 @@ I learnt about how to create SSH keys, the advantage of using `#!/usr/bin/env ba
 
 > Each file contains the solution to a task in the project.
 
-- [1-for_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/1-for_best_school):
+- [0-RSA_public_key.pub](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/0-RSA_public_key.pub):
 - [1-for_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/1-for_best_school):
 - [2-while_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/2-while_best_school):
 - [3-until_best_school](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/3-until_best_school):

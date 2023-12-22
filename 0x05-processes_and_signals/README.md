@@ -19,6 +19,6 @@ I learnt about PID's, processes, how to find a process’ PID, how to kill a pro
 - [6-stop_me_if_you_can](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/6-stop_me_if_you_can):
 - [7-highlander](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/7-highlander):
 - [8-beheaded_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/8-beheaded_process):
-- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/):
-- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/):
-- [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/):
+- [100-process_and_pid_file](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/100-process_and_pid_file):
+- [101-manage_my_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/101-manage_my_process):
+- [102-zombie.c](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/102-zombie.c):

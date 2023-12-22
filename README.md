@@ -14,6 +14,7 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x02. Shell, I/O Redirections and filters](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x02-shell_redirections)
 - [0x03. Shell, init files, variables and expansions](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions)
 - [0x04. Loops, conditions and parsing](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing)
+- [0x05. Processes and signals](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x05-processes_and_signals)
 - []()
 
 ## Built with

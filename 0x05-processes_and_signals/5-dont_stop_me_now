@@ -2,4 +2,5 @@
 # A Bash script that stops 4-to_infinity_and_beyond process. Requirements: You must use 'kill' command.
 # shellcheck disable=SC2009
 
-ps aux | grep 'your_script_name' | awk '{print $2}' | xargs kill
+pid=$(ps aux | grep 4-to_infinity_and_beyond  | grep -v grep | awk '{print $2}')
+kill "$pid"

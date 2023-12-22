@@ -1,1 +1,5 @@
 #!/usr/bin/env bash
+# A Bash script that stops 4-to_infinity_and_beyond process.
+# Requirements: You must use 'kill' command.
+
+ps aux | grep '4-to_infinity_and_beyond' | awk '{print $2}' | xargs kill

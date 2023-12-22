@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that stops 4-to_infinity_and_beyond process.
-# Requirements: You must use 'kill' command.
+# A Bash script that stops 4-to_infinity_and_beyond process. Requirements: You must use 'kill' command.
+# shellcheck disable=SC2009
 
-kill "$(pgrep '4-to_infinity_and_beyond')"
+ps aux | grep 'your_script_name' | awk '{print $2}' | xargs kill

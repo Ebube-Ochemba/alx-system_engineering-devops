@@ -64,4 +64,4 @@ I learnt about how to create SSH keys, the advantage of using `#!/usr/bin/env ba
 		- In list format
 	- Ordered from the greatest to the lowest number of occurrences
 	- You must use awk
-        - You are not allowed to use `while`, `for`, `until` and `cut`
+	- You are not allowed to use `while`, `for`, `until` and `cut`

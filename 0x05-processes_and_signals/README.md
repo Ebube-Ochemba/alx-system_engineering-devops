@@ -10,12 +10,19 @@ I learnt about PID's, processes, how to find a process’ PID, how to kill a pro
 
 > Each file contains the solution to a task in the project.
 
-- [0-what-is-my-pid](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/0-what-is-my-pid):
-- [1-list_your_processes](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/1-list_your_processes):
-- [2-show_your_bash_pid](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/2-show_your_bash_pid):
-- [3-show_your_bash_pid_made_easy](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/3-show_your_bash_pid_made_easy):
-- [4-to_infinity_and_beyond](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond):
-- [5-dont_stop_me_now](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/5-dont_stop_me_now):
+- [0-what-is-my-pid](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/0-what-is-my-pid): A Bash script that displays its own PID.
+- [1-list_your_processes](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/1-list_your_processes): A Bash script that displays a list of currently running processes.
+	- Shows all processes, for all users, including those which might not have a TTY
+	- Displays in a user-oriented format
+	- Shows process hierarchy
+- [2-show_your_bash_pid](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/2-show_your_bash_pid): A Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process. (using previous command)
+	- Cannot use `pgrep`
+	- The third line of your script must be `# shellcheck disable=SC2009`
+- [3-show_your_bash_pid_made_easy](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/3-show_your_bash_pid_made_easy): A Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`
+- [4-to_infinity_and_beyond](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond): A Bash script that displays `To infinity and beyond` indefinitely.
+> (can be stopped with `ctrl+c`)
+- [5-dont_stop_me_now](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/5-dont_stop_me_now): A Bash script that stops [`4-to_infinity_and_beyond`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond) process.
+> (must use `kill`)
 - [6-stop_me_if_you_can](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/6-stop_me_if_you_can):
 - [7-highlander](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/7-highlander):
 - [8-beheaded_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/8-beheaded_process):

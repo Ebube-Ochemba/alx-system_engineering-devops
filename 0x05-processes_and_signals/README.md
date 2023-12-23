@@ -37,9 +37,10 @@ I learnt about PID's, processes, how to find a process’ PID, how to kill a pro
 	- Displays `I hate the kill command` when receiving a `SIGTERM` signal
 	- Displays `Y U no love me?!` when receiving a `SIGINT` signal
 	- Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a `SIGQUIT` or `SIGTERM` signal
-- [101-manage_my_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/101-manage_my_process): 
-1. Write a [`manage_my_process`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/manage_my_process) Bash script that:
+- [101-manage_my_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/101-manage_my_process): There are two steps:
+I. Write a [`manage_my_process`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/manage_my_process) Bash script that:
 	- Indefinitely writes `I am alive!` to the file `/tmp/my_process`
 	- In between every `I am alive!` message, the program should pause for 2 seconds
-2. Write Bash (init) script `101-manage_my_process` that manages [`manage_my_process`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/manage_my_process).
-- [102-zombie.c](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/102-zombie.c):
+II. Write Bash (init) script `101-manage_my_process` that manages [`manage_my_process`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/manage_my_process).
+> (check task page for requirements)
+- [102-zombie.c](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/102-zombie.c): A C program that creates 5 zombie processes.

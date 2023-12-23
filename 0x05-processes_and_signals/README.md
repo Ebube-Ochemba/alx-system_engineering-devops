@@ -23,8 +23,13 @@ I learnt about PID's, processes, how to find a process’ PID, how to kill a pro
 > (can be stopped with `ctrl+c`)
 - [5-dont_stop_me_now](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/5-dont_stop_me_now): A Bash script that stops [`4-to_infinity_and_beyond`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond) process.
 > (must use `kill`)
-- [6-stop_me_if_you_can](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/6-stop_me_if_you_can):
-- [7-highlander](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/7-highlander):
+- [6-stop_me_if_you_can](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/6-stop_me_if_you_can): A Bash script that stops [`4-to_infinity_and_beyond`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/4-to_infinity_and_beyond) process.
+> (cannot use `kill` or `killall`)
+- [7-highlander](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/7-highlander): A Bash script that displays:
+	- `To infinity and beyond` indefinitely
+	- With a `sleep 2` in between each iteration
+	- `I am invincible!!!` when receiving a `SIGTERM` signal
+> ([`67-stop_me_if_you_can`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/67-stop_me_if_you_can) kills [`7-highlander`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/7-highlander))
 - [8-beheaded_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/8-beheaded_process):
 - [100-process_and_pid_file](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/100-process_and_pid_file):
 - [101-manage_my_process](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x05-processes_and_signals/101-manage_my_process):

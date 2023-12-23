@@ -56,12 +56,12 @@ I learnt about how to create SSH keys, the advantage of using `#!/usr/bin/env ba
 	- Format: IP HTTP_CODE
 		- in a list format
 		- See example
-	- You must use awk
+	- You must use `awk`
 	- You are not allowed to use `while`, `for`, `until` and `cut`
 - [103-dig_the-data](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x04-loops_conditions_and_parsing/103-dig_the-data): A Bash script that groups visitors by IP and HTTP status code, and displays this data. (from previous task)
 	- The exact format must be:
 		- OCCURENCE_NUMBER IP HTTP_CODE
 		- In list format
 	- Ordered from the greatest to the lowest number of occurrences
-	- You must use awk
+	- You must use `awk`
 	- You are not allowed to use `while`, `for`, `until` and `cut`

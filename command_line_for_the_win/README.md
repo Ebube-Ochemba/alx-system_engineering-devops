@@ -18,11 +18,11 @@ $ cd </path/to/directory>
 ```sh
 $ lcd </path/to/directory>
 ```
-4. Use the `put` command to upload the `*.png` files to your **remote server**. (_to verify that step 3 & 4, use:_ `pwd` & `lpwd`)
+4. Use the `put` command to upload the `*.png` files to your **remote server**. (_to verify step 3 & 4, use:_ `pwd` & `lpwd` _respectively_)
 ```sh
 $ put </path/to/directory>
 ```
-5. Now that the files are on your **remote server**, `push` files to GitHub and you are done.
+5. Now that the files are on your **remote server**, `push` the files to GitHub and you are done.
 
 ## Files
 

@@ -5,12 +5,24 @@
 ## Summary
 
 I learnt about SFTP and SFTP File Transfer. 
-After completing the levels and taking screenshots, I used the following steps to use the `SFTP command-line tool` to upload the files correctly;
-1. Connected to my Remote Server.
+After completing the levels and taking screenshots, I used the following steps to use the `SFTP command-line tool` to upload the `*.png` files correctly;
+1. Connect to your Remote Server (_sandbox environment_).
 ```sh
 $ sftp <username>@<remote_server__hostname>
 ```
-2. 
+2. Navigate to the directory on your **remote server** that you want to upload the `*.png` files **to**.
+```sh
+$ cd </path/to/directory>
+```
+3. Navigate to the directory on your **local machine** that you want to upload the `*.png` files **from**.
+```sh
+$ lcd </path/to/directory>
+```
+4. Use the `put` command to upload the `*.png` files to your **remote server**. (_to verify that step 3 & 4, use:_ `pwd` & `lpwd`)
+```sh
+$ put </path/to/directory>
+```
+5. Now that the files are on your **remote server**, `push` files to GitHub and you are done.
 
 ## Files
 

@@ -28,6 +28,6 @@ $ put </path/to/file>
 
 > Each file contains the solution to a task in the project.
 
-- [0-first_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/0-first_9_tasks.png): A screenshot after Completing the first 9 tasks.
-- [1-next_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/1-next_9_tasks.png): A screenshot after Completing the 9 next tasks, getting to 18 total.
-- [2-next_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/2-next_9_tasks.png): A screenshot after Completing the 9 next tasks, getting to 27 total.
+- [x] [0-first_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/0-first_9_tasks.png): A screenshot after Completing the first 9 tasks.
+- [x] [1-next_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/1-next_9_tasks.png): A screenshot after Completing the 9 next tasks, getting to 18 total.
+- [x] [2-next_9_tasks.png](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/command_line_for_the_win/2-next_9_tasks.png): A screenshot after Completing the 9 next tasks, getting to 27 total.

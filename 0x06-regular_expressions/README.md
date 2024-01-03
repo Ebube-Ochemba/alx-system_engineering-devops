@@ -18,7 +18,7 @@ I learnt about regular expressions by building them using the Oniguruma library,
 - [x] [5-beginning_and_end.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/5-beginning_and_end.rb):
 - [x] [6-phone_number.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/6-phone_number.rb):
 - [x] [7-OMG_WHY_ARE_YOU_SHOUTING.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/7-OMG_WHY_ARE_YOU_SHOUTING.rb):
-- [ ] [100-textme.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/100-textme.rb): A script outputs: `[SENDER],[RECEIVER],[FLAGS]` from a [logfile](http://intranet-projects-files.s3.amazonaws.com/holbertonschool-sysadmin_devops/78/text_messages.log).
+- [ ] [100-textme.rb](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/100-textme.rb): A script outputs: `[SENDER],[RECEIVER],[FLAGS]` from a [logfile](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x06-regular_expressions/text_messages.log).
 	- The sender phone number or name (including country code if present)
 	- The receiver phone number or name (including country code if present)
 	- The flags that were used

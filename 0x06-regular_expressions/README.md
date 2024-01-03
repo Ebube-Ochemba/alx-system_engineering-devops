@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about regular expressions by building them using the Oniguruma library, which is uded by Ruby by default. 
+I learnt about regular expressions by building them using the Oniguruma library, which is used by Ruby by default. 
 
 ## Files
 

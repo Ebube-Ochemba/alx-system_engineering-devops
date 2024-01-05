@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about OSI Model, Area networks like LAN & WAN, the Internet, IP addresses, the 2 types of IP addresses, what `localhost` subnet are and why IPv6 was created.
+I learnt about the OSI Model and its 7 layers, Area networks like LAN & WAN, the Internet, IP addresses, the 2 types of IP addresses, what `localhost` subnet are and why IPv6 was created, TCP/UDP and their similiarities/differences, what the 2 mainly used data transfer protocols for IP are (transfer level on the OSI schema), what a port is and memorized SSH, HTTP and HTTPS port numbers, and what the `netstat` and `ping` commands do.
 
 ## Files
 

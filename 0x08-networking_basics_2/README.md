@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about what `localhost`/`127.0.0.1`, `0.0.0.0`, `/etc/hosts` all are, and how to display your machine’s active network interfaces.
+I learnt about the `ifconfig`, `telnet`, `nc` and `cut` commands, what `localhost`/`127.0.0.1`, `0.0.0.0`, `/etc/hosts` all are, and how to display your machine’s active network interfaces.
 
 ## Files
 

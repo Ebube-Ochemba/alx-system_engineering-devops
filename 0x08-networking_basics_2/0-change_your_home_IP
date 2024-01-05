@@ -4,7 +4,7 @@
 #   - facebook.com resolves to 8.8.8.8
 
 cp /etc/hosts ~/hosts.new
-sed -i "/127.0.0.1/c\172.0.0.2" ~/hosts.new
+sed -i "/127.0.0.1/c\127.0.0.2" ~/hosts.new
 echo "8.8.8.8 facebook.com" >> ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
 rm ~/hosts.new

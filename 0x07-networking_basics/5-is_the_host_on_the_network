@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# The "ping" command pings an IP address. The "-c" option lets you specify the number of ping times.
+if [ "$#" -ne 1 ]; then
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+	ping -c 5 $1
+fi

@@ -1,4 +1,4 @@
-# x
+# Web infrastructure design
 
 > This project was on 
 
@@ -14,16 +14,3 @@ I learnt about...
 - [x] []():
 - [x] []():
 - [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-- [x] []():
-
-> - [test_files](): A folder of test files. Provided by Alx.

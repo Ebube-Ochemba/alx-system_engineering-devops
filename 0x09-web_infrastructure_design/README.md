@@ -1,10 +1,10 @@
 # Web infrastructure design
 
-> This project was on 
+> This project was an introduction to web infrastucture design. 
 
 ## Summary
 
-I learnt about...
+I learnt about... 
 
 ## Files
 

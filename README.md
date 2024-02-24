@@ -19,6 +19,7 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x07. Networking basics #0](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x07-networking_basics)
 - [0x08. Networking basics #1](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x08-networking_basics_2)
 - [0x09. Web infrastructure design](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design): `collaboration`
+- [0x0A. Configuration management](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0A-configuration_management)
 - [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/)
 
 ## Built with

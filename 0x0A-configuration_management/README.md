@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about general practices of configuration management, 
+I learnt about general practices of configuration management, Puppet and how to write Puppet manifests, Puppet-lint etc.
 
 ## Files
 

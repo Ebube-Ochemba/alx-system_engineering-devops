@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# A bash script that:
+# 	Installs Nginx.
+# 	Configures Nginx to listen on port 80.
+# 	Configure Nginx server so that /redirect_me is
+# 			redirecting to another page.
+# 	Redirection must be a "301 Moved Permanently".
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+sudo ufw allow 'Nginx HTTP'
+
+# insert code here
+
+sudo service nginx restart

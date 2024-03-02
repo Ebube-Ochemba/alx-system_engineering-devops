@@ -2,6 +2,8 @@
 # A bash script that:
 # 	Installs Nginx.
 # 	Configures Nginx to listen on port 80.
+# 	Returns a page containing the string "Hello World!" when
+# 		queried at the root with GET request using curl.
 # 	Configure Nginx server so that /redirect_me is
 # 			redirecting to another page.
 # 	Redirection must be a "301 Moved Permanently".
@@ -11,6 +13,9 @@ sudo apt-get -y install nginx
 
 sudo ufw allow 'Nginx HTTP'
 
-# insert code here
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+URL="https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c"
+sudo sed -i "/server_name _;$/a\ \t\trewrite ^/redirect_me $URL permanent;" /etc/nginx/sites-available/default
 
 sudo service nginx restart

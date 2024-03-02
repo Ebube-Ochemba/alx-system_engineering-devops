@@ -24,6 +24,11 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x0C. Web server](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0C-web_server)
 - [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/)
 
+### Extras
+ 
+- [Command line for the win](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/command_line_for_the_win)
+- [Attack is the best defense](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/attack_is_the_best_defense)
+
 ## Built with
 - CLI
 - OS: Ubuntu 20.04 LTS

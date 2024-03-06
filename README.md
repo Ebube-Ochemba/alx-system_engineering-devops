@@ -22,6 +22,7 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x0A. Configuration management](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0A-configuration_management)
 - [0x0B. SSH](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0B-ssh)
 - [0x0C. Web server](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0C-web_server)
+- [Web stack debugging #0](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0)
 - [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/)
 
 ### Extras

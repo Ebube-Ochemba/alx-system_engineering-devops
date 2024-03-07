@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about 
+I learnt about basic debugging practices, and how the `curl` command works.
 
 ## Files
 

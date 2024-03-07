@@ -10,6 +10,4 @@ I learnt about
 
 > Each file contains the solution to a task in the project.
 
-- [x] []():
-
-> - [test_files](): A folder of test files. Provided by Alx.
+- [x] [0-give_me_a_page](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0D-web_stack_debugging_0/0-give_me_a_page): Debug Apache server error

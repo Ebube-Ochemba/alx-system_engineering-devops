@@ -7,21 +7,29 @@
 # 	Nginx - custom 404 page with string "Ceci n'est pas une page".
 # 	Nginx - HTTP response contains a custom header "X-Served-By: hostname"
 
+# Update package repositories and install Nginx
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
+# Allow Nginx through the firewall
 sudo ufw allow 'Nginx HTTP'
 
+# Set ownership of HTML file to Nginx user and ensure web roots permission
 sudo chown  "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chown -R ubuntu /var/www
+# Create index file with "Hello World!"
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
+# Custom 301 redirect
 URL="https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c"
 sudo sed -i "/server_name _;$/a\ \t\trewrite ^/redirect_me $URL permanent;" /etc/nginx/sites-available/default
 
+# Custom 404 error page
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/error_404.html >/dev/null
 sudo sed -i "/rewrite.*/a\ \t\terror_page 404 /error_404.html;" /etc/nginx/sites-available/default
 
-xxx
+# Custom HTTP response header
+sudo sed -i "/error_page 404.*/a\ \t\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
 
+# Restart Nginx
 sudo service nginx restart

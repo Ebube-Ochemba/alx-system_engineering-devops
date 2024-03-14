@@ -11,18 +11,8 @@ sudo apt-get -y install haproxy
 echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
 # Setup configuration
-server_config="
-frontend main
-        bind *:80
-	mode http
-	default_backend web_servers
-	
-backend web_servers
-	balance roundrobin
-	server 283254-web-01 100.24.255.26 check
-	server 283254-web-02 52.204.101.12 check
-"
-echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
+HCFG="\\\nfrontend main\n\tbind *:80\n\tmode http\n\tdefault_backend web_servers\n\nbackend web_servers\n\tbalance roundrobin\n\tserver 283254-web-01 100.24.255.26 check\n\tserver 283254-web-02 52.204.101.12 check\n"
+sudo sed -i "\$a $HCFG" /etc/haproxy/haproxy.cfg
 
 # Start HAProxy
 sudo service haproxy restart

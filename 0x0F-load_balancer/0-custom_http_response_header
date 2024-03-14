@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# A bash script that Configures a server: 
+# 	Installs Nginx and configures it to to listen on port 80
+# 	Returns a page containing the string "Hello World!" when
+# 		queried at the root with GET request using curl.
+# 	Nginx -  /redirect_me redirects to another page. (301)
+# 	Nginx - custom 404 page with string "Ceci n'est pas une page".
+# 	Nginx - HTTP response contains a custom header "X-Served-By: hostname"
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+sudo ufw allow 'Nginx HTTP'
+
+sudo chown  "$USER":"$USER" /var/www/html/index.nginx-debian.html
+sudo chown -R ubuntu /var/www
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+URL="https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c"
+sudo sed -i "/server_name _;$/a\ \t\trewrite ^/redirect_me $URL permanent;" /etc/nginx/sites-available/default
+
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/error_404.html >/dev/null
+sudo sed -i "/rewrite.*/a\ \t\terror_page 404 /error_404.html;" /etc/nginx/sites-available/default
+
+xxx
+
+sudo service nginx restart

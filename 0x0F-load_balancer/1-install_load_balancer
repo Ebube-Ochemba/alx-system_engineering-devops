@@ -10,11 +10,8 @@ sudo apt-get -y install haproxy
 # Make sure HAproxy can be managed via an init script
 echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
-# Backup config file
-sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
-
 # Setup configuration
-config="
+server_config="
 frontend main
         bind *:80
 	mode http
@@ -25,7 +22,7 @@ backend web_servers
 	server 283254-web-01 100.24.255.26 check
 	server 283254-web-02 52.204.101.12 check
 "
-echo "$config" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 # Start HAProxy
 sudo service haproxy restart

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # A bash script that Installs Nginx on a server and configures as follows: 
-# 	Listen on port 80
-# 	Curl GET query at root returns page with string "Hello World!"
-# 	/redirect_me redirects to another page. (301 redirect)
-# 	Custom 404 page with string "Ceci n'est pas une page".
-# 	HTTP response contains a custom header "X-Served-By: hostname"
+#	- Listen on port 80
+#	- Curl GET query at root returns page with string "Hello World!"
+#	- /redirect_me redirects to another page. (301 redirect)
+#	- Custom 404 page with string "Ceci n'est pas une page".
+#	- HTTP response contains a custom header "X-Served-By: hostname"
 
 # Update package repositories and install Nginx
 sudo apt-get -y update

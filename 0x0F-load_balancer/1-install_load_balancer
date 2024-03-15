@@ -14,7 +14,7 @@ echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 sudo chown  $USER:$USER /etc/haproxy/haproxy.cfg
 
 # Setup configuration
-HCFG="\\\nfrontend main\n\tbind *:80\n\tdefault_backend web_servers\n\nbackend web_servers\n\tbalance roundrobin\n\tserver 283254-web-01 100.24.255.26 check\n\tserver 283254-web-02 52.204.101.12 check\n"
+HCFG="\\\nfrontend main\n\tbind *:80\n\tdefault_backend web_servers\n\nbackend web_servers\n\tbalance roundrobin\n\tserver 283254-web-01 100.24.255.26:80 check\n\tserver 283254-web-02 52.204.101.12:80 check\n"
 sudo sed -i "\$a $HCFG" /etc/haproxy/haproxy.cfg
 
 # Start HAProxy

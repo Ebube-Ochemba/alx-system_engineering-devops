@@ -1,6 +1,6 @@
-# x
+# Web stack debugging #1
 
-> This project was on 
+> This project was about more Web stack debugging cases.
 
 ## Summary
 
@@ -10,6 +10,5 @@ I learnt about...
 
 > Each file contains the solution to a task in the project.
 
-- [x] []():
-
-> - [test_files](): A folder of test files. Provided by Alx.
+- [ ] [0-nginx_likes_port_80](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/0-nginx_likes_port_80):
+- [ ] [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/):

@@ -7,34 +7,34 @@
 
 # Update Server
 exec { 'apt-get-update':
-  command => '/usr/bin/apt-get update',
+    command => '/usr/bin/apt-get update',
 }
 
 # Install Nginx
 package { 'nginx':
-  ensure  => installed,
-  require => Exec['apt-get-update'],
+    ensure  => installed,
+    require => Exec['apt-get-update'],
 }
 
 # Ensure Nginx listens to port 80
 firewall { 'Allow Nginx HTTP':
-  port   => 80,
-  proto  => 'tcp',
-  action => 'accept',
+    port   => 80,
+    proto  => 'tcp',
+    action => 'accept',
 }
 
 # Configure server to return "Hello World!" on root
 file { '/var/www/html/index.nginx-debian.html':
-  content => 'Hello World!',
-  require => Package['nginx'],
+    content => 'Hello World!',
+    require => Package['nginx'],
 }
 
 # Configure Nginx "301 redirect"
 exec {'redirect_me':
-  command  => "/bin/sed -i '/server_name _;$/a\\ \\t\\trewrite ^/redirect_me https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c permanent;' /etc/nginx/sites-available/default",
-  unless   => "/bin/grep -q 'rewrite ^/redirect_me' /etc/nginx/sites-available/default",
-  require  => Package['nginx'],
-  notify   => Service['nginx'],
+    command => "/bin/sed -i '/server_name _;$/a\\ \\t\\trewrite ^/redirect_me https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c permanent;' /etc/nginx/sites-available/default",
+    unless  => "/bin/grep -q 'rewrite ^/redirect_me' /etc/nginx/sites-available/default",
+    require => Package['nginx'],
+    notify  => Service['nginx'],
 }
 
 # Ensure Nginx service

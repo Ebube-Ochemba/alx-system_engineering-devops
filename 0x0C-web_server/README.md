@@ -15,4 +15,4 @@ I learnt about the main role of a web server, child processes, why web servers u
 - [x] [2-setup_a_domain_name](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0C-web_server/2-setup_a_domain_name): My domain name.
 - [x] [3-redirection](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0C-web_server/3-redirection): A Bash script that configures a new Ubuntu machine.
 - [x] [4-not_found_page_404](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0C-web_server/4-not_found_page_404): A Bash script that configures a new Ubuntu machine.
-- [ ] [7-puppet_install_nginx_web_server.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0C-web_server/7-puppet_install_nginx_web_server.pp): A Puppet manifest that installs and configures an Nginx server.
+- [x] [7-puppet_install_nginx_web_server.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0C-web_server/7-puppet_install_nginx_web_server.pp): A Puppet manifest that installs and configures an Nginx server.

@@ -1,26 +1,30 @@
 # Pupper manifet to install and configure nginx
 
 
-# Update package repositories
-exec { 'update server':
-  command  => 'sudo apt -y update',
-  provider => shell,
-}
-
-# Install Nginx
--> exec { 'install nginx':
-    command => 'sudo apt -y install nginx',
-    provider => shell,
+# Ensure Nginx package is installed
+package { 'nginx':
+    ensure => installed,
+    require => Exec['update server'], # Ensure update server exec runs first
 }
 
 # Custom HTTP response header
--> exec { 'non-standard header':
-    command => 'sudo sed -i "/error_page 404.*/a\ \t\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default',
-    provider  => shell,
+file_line { 'add X-Served-By header':
+    path    => '/etc/nginx/sites-available/default',
+    line    => '    add_header X-Served-By $HOSTNAME;',
+    after   => 'error_page 404 /404.html;',
+    notify  => Service['nginx'], # Restart Nginx when the file is modified
 }
 
-# Restart Nginx
--> exec { 'restart nginx':
-    command => 'sudo service nginx restart',
-    provider => shell,
+# Ensure Nginx service is running and enabled
+service { 'nginx':
+    ensure  => running,
+    enable  => true,
+    require => Package['nginx'], # Ensure Nginx package is installed before starting the service
+}
+
+# Update package repositories
+exec { 'update server':
+    command  => 'apt -y update',
+    path     => ['/bin', '/usr/bin/'],
+    refreshonly => true, # Only run when triggered
 }

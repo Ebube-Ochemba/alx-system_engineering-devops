@@ -1,22 +1,26 @@
 # Pupper manifet to install and configure nginx
 
-$tag = "add_header X-Served-By ${hostname};"
 
-# updating apt
-exec { 'update':
-  command  => 'sudo apt-get -y update',
+# Update package repositories
+exec { 'update server':
+  command  => 'sudo apt -y update',
   provider => shell,
 }
 
-# adds the header to the file
--> file_line { 'Add custom HTTP server':
-  ensure => 'present',
-  path   => '/etc/nginx/sites-available/default',
-  after  => 'listen 80 default_server;',
-  line   => $tag,
+# Install Nginx
+-> exec { 'install nginx':
+    command => 'sudo apt -y install nginx',
+    provider => shell,
 }
 
-# restarting nginx
--> exec { 'service -y nginx':
-  command => '/usr/sbin/service nginx restart',
+# Custom HTTP response header
+-> exec { 'non-standard header':
+    command => 'sudo sed -i "/error_page 404.*/a\ \t\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default',
+    provider  => shell,
+}
+
+# Restart Nginx
+-> exec { 'restart nginx':
+    command => 'sudo service nginx restart',
+    provider => shell,
 }

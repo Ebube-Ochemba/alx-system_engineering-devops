@@ -11,7 +11,7 @@ package { 'nginx':
 file_line { 'add X-Served-By header':
     path    => '/etc/nginx/sites-available/default',
     line    => '    add_header X-Served-By $HOSTNAME;',
-    after   => 'error_page 404 /404.html;',
+    after   => 'listen 80 default_server;',
     notify  => Service['nginx'], # Restart Nginx when the file is modified
 }
 

@@ -1,31 +1,16 @@
-# Pupper manifet to install and configure nginx
-
-
-# Ensure Nginx package is installed
-package { 'nginx':
-    ensure => installed,
-    require => Exec['update server'], # Ensure update server exec runs first
+# install and configure nginx
+exec {'update':
+  command => '/usr/bin/apt-get update',
 }
-
-# Custom HTTP response header
-file_line { 'add X-Served-By header':
-    path    => '/etc/nginx/sites-available/default',
-    match => '^server {',
-    line  => "server {\n\tadd_header X-Served-By \"${::hostname}\";",
-    multiple => false,
-    notify  => Service['nginx'], # Restart Nginx when the file is modified
+-> package { 'nginx':
+  ensure => installed,
 }
-
-# Ensure Nginx service is running and enabled
-service { 'nginx':
-    ensure  => running,
-    enable  => true,
-    require => Package['nginx'], # Ensure Nginx package is installed before starting the service
+-> file_line { 'header_served_by':
+  path  => '/etc/nginx/sites-available/default',
+  match => '^server {',
+  line  => "server {\n\tadd_header X-Served-By \"${hostname}\";",
+  multiple => false,
 }
-
-# Update package repositories
-exec { 'update server':
-    command  => 'apt -y update',
-    path     => ['/bin', '/usr/bin/'],
-    refreshonly => true, # Only run when triggered
+-> exec {'run':
+  command => '/usr/sbin/service nginx restart',
 }

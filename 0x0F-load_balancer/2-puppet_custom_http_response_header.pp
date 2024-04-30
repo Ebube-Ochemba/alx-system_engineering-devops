@@ -15,7 +15,7 @@ exec {'update':
 -> file_line { 'add X-Served-By header':
   path  => '/etc/nginx/sites-available/default',
   match => '^server {',
-  line  => "server {\n\tadd_header X-Served-By \"${hostname}\";",
+  line  => "server {\n\tadd_header X-Served-By \"${::hostname}\";",
   multiple => false,
 }
 

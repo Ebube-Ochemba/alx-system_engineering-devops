@@ -10,8 +10,9 @@ package { 'nginx':
 # Custom HTTP response header
 file_line { 'add X-Served-By header':
     path    => '/etc/nginx/sites-available/default',
-    line    => '    add_header X-Served-By $HOSTNAME;',
-    after   => 'listen 80 default_server;',
+    match => '^server {',
+    line  => "server {\n\tadd_header X-Served-By \"${::hostname}\";",
+    multiple => false,
     notify  => Service['nginx'], # Restart Nginx when the file is modified
 }
 

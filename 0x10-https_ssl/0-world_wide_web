@@ -7,7 +7,7 @@ display_info ()
     subdomain="$2"
 
 	# Use 'dig' to perform a DNS lookup and 'awk' to format the output
-    dig "$subdomain.$domain" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="$subdomain"
+	dig "$subdomain.$domain" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="$subdomain"
 }
 
 for sbd in "www" "lb-01" "web-01" "web-02"

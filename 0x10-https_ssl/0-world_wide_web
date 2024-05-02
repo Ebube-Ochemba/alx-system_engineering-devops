@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # A Bash script that prints information about a domain and it's subdomain(s).
+# This setup ensures the actual "printf" call is all=ways made with the necessary arguments.
 
 display_info ()
 {

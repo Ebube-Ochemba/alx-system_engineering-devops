@@ -16,7 +16,7 @@ do
 	 # If $2 is not provided or matches current subdomain...
 	if [ -z "$2" ] || [ "$2" == "$sbd" ];
     then
-		# ...call 'display_info' function with domain & current sbd.
+		# ...call 'display_info' with domain & current sbd.
 		display_info "$1" "$sbd"
     fi
 done

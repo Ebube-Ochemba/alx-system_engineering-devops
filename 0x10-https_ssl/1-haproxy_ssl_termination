@@ -33,14 +33,13 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend http_and_https
+frontend main
         bind *:80
         bind *:443 ssl crt /etc/letsencrypt/live/www.ebube.tech/haproxy.pem
-        redirect scheme https if !{ ssl_fc }
-        mode http
+        http-request redirect scheme https unless { ssl_fc }
         default_backend web_servers
 
 backend web_servers
         balance roundrobin
-        server 283254-web-01 100.24.255.26:80 check
-        server 283254-web-02 52.204.101.12:80 check
+        server 283254-web-01 52.86.25.3:80 check
+        server 283254-web-02 35.153.194.184:80 check

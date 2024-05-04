@@ -17,7 +17,7 @@ sudo ufw allow 'Nginx HTTP'
 sudo chown  "$USER":"$USER" /var/www/html/index.nginx-debian.html
 sudo chown -R ubuntu /var/www
 # Create index file with "Hello World!"
-echo "Hello World!" > /var/www/html/index.nginx-debian.html > /dev/null
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 # Custom 301 redirect
 URL="https://youtu.be/dQw4w9WgXcQ?si=gOoTgc3trB6Ozv8c"

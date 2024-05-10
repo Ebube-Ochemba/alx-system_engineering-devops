@@ -1,15 +1,19 @@
-# ...
+# What happens when you type google.com in your browser and press Enter
 
-> This project was ...
+> This project was about interacting with a layer of "the" stack as a Full-Stack Sofware Engineer.
 
 ## Summary
 
-I learnt about ...
+I made a blog post explaining what happens when you type `https://www.google.com` in your browser and press `Enter`. The post covers the folowwing:
+  - DNS request
+  - TCP/IP
+  - Firewall
+  - HTTPS/SSL
+  - Load-balancer
+  - Web server
+  - Application server
+  - Database
 
-## Files
+## File
 
-> Each file contains the solution to a task in the project.
-
-- [ ] []():
-
-> [test_files](): A folder of test files. Provided by Alx.
+- [ ] [0-blog_post](/0-blog_post): The `URL` of my blog post

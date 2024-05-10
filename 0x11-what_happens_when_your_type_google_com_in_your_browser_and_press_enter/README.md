@@ -1,6 +1,6 @@
 # What happens when you type google.com in your browser and press Enter
 
-> This project was about interacting with a layer of "the" stack as a Full-Stack Sofware Engineer.
+> This project was about interacting with a layer of `the stack` as a Full-Stack Sofware Engineer.
 
 ## Summary
 

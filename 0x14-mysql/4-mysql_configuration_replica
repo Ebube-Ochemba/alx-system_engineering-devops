@@ -42,11 +42,11 @@ server-id = 2
 # Enables binary logging to store changes received from the primary server
 log_bin = /var/log/mysql/mysql-bin.log
 
-# Specifies the database to be replicated on this replica server
-# Only changes made to this database on the primary server will be replicated
-binlog_do_db = tyrell_corp
-
 # Specifies the location and name of the relay log file
 # Relay log stores copies of events from the primary server's binary log
 # These events are then applied to the replica's database
 relay_log = /var/log/mysql/mysql-relay-bin.log
+
+# Specifies the database to be replicated on this replica server
+# Only changes made to this database on the primary server will be replicated
+binlog_do_db = tyrell_corp

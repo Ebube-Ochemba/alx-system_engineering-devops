@@ -1,3 +1,12 @@
+#!/usr/bin/python3
+"""
+This script fetches data from a REST API and displays the TODO list progress
+for a given employee ID. The script accepts an integer as a parameter, which
+is the employee ID, and displays the employee's TODO list progress in a
+specific format.
+It then exports the data in the CSV format.
+"""
+
 import requests
 import csv
 from sys import argv

@@ -1,87 +1,40 @@
 #!/usr/bin/python3
 """
-This module fetches data from a REST API and displays the TODO list progress
-for a given employee ID. It uses the requests module to make HTTP requests.
-
-Usage:
-    python3 script.py <employee_id>
+This script fetches data from a REST API and displays the TODO list progress
+for a given employee ID. The script accepts an integer as a parameter, which
+is the employee ID, and displays the employee's TODO list progress in a
+specific format.
 """
 
 import requests
-import sys
+from sys import argv
 
+if __name__ == '__main__':
+    # Check if the correct number of arguments is provided
+    if len(argv) != 2:
+        print("Usage: ./script.py <employee_id>")
+        exit(1)
 
-def fetch_user_data(employee_id):
-    """
-    Fetch user data for a given employee ID.
+    # Fetch users and todos data from the API
+    users_url = 'https://jsonplaceholder.typicode.com/users'
+    todos_url = 'https://jsonplaceholder.typicode.com/todos'
+    users = requests.get(users_url).json()
+    todos = requests.get(todos_url).json()
 
-    Args:
-        employee_id (int): The ID of the employee.
+    # Get the list of tasks for the given user ID
+    user_id = argv[1]
+    tasks = [task for task in todos if str(task['userId']) == user_id]
+    done_tasks = [task for task in tasks if task['completed']]
 
-    Returns:
-        dict: The user data as a dictionary.
-    """
-    user_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
-    user_response = requests.get(user_url)
-    if user_response.status_code != 200:
-        print("User not found")
-        sys.exit(1)
-    return user_response.json()
+    # Get the user's name
+    user_name = ''
+    for user in users:
+        if user_id == str(user['id']):
+            user_name = user['name']
+            break
 
-
-def fetch_todos_data(employee_id):
-    """
-    Fetch TODO list data for a given employee ID.
-
-    Args:
-        employee_id (int): The ID of the employee.
-
-    Returns:
-        list: A list of todos as dictionaries.
-    """
-    todos_url = (
-        f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}"
-        )
-    todos_response = requests.get(todos_url)
-    return todos_response.json()
-
-
-def display_todo_progress(employee_name, todos):
-    """
-    Display the TODO list progress for an employee.
-
-    Args:
-        employee_name (str): The name of the employee.
-        todos (list): A list of todos as dictionaries.
-    """
-    total_tasks = len(todos)
-    done_tasks = [todo for todo in todos if todo.get("completed")]
-    num_done_tasks = len(done_tasks)
-
-    # Print the progress summary
-    print(
-        f"Employee {employee_name} is done with tasks"
-        "({num_done_tasks}/{total_tasks}):"
-        )
+    # Display the progress of the TODO list
+    print('Employee {} is done with tasks({}/{}):'
+          .format(user_name, len(done_tasks), len(tasks)))
     for task in done_tasks:
-        print(f"\t {task.get('title')}")
-
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 script.py <employee_id>")
-        sys.exit(1)
-
-    try:
-        employee_id = int(sys.argv[1])
-    except ValueError:
-        print("Employee ID must be an integer")
-        sys.exit(1)
-
-    # Fetch and process data
-    user_data = fetch_user_data(employee_id)
-    employee_name = user_data.get("name")
-    todos = fetch_todos_data(employee_id)
-
-    # Display the TODO list progress
-    display_todo_progress(employee_name, todos)
+        print('\t {}'.format(task['title']))

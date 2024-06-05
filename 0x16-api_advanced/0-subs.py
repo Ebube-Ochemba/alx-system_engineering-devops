@@ -8,7 +8,7 @@ import requests
 def number_of_subscribers(subreddit):
     """Returns the number of subscribers or 0 if the subreddit is invalid.
     """
-    url = "http://www.reddit.com/r/{}/about.json'.format(subreddit)"
+    url = f'https://www.reddit.com/r/{subreddit}/about.json'
     headers = {
         'User-Agent': 'MyRedditAPI/0.1'
     }

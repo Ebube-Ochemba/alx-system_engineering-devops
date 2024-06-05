@@ -15,4 +15,4 @@ I learnt about how to read API documentation to find the endpoints you’re look
 - [ ] [2-recurse.py](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x16-api_advanced/2-recurse.py): A recursive function that queries the [Reddit API](https://www.reddit.com/dev/api/) and returns a list containing the titles of all hot articles for a given subreddit. If no results are found for the given subreddit, the function should return None.
 - [ ] [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x16-api_advanced/):
 
-> [test_files](): A folder of test files. Provided by Alx.
+> [test_files](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x16-api_advanced/test_files): A folder of test files. Provided by Alx.

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script gracefully reloads the Gunicorn application server by sending a HUP signal to the Gunicorn master process.
+# Gracefully reloads the Gunicorn.
 
 pgrep gunicorn | xargs kill -HUP

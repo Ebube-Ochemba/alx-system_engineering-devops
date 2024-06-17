@@ -1,15 +1,13 @@
-# ...
+# Web stack debugging #3
 
-> This project was ...
+> This project about more Web stack debugging cases.
 
 ## Summary
 
-I learnt about ...
+I learnt about `strace` and how it works.
 
 ## Files
 
 > Each file contains the solution to a task in the project.
 
-- [ ] []():
-
-> [test_files](): A folder of test files. Provided by Alx.
+- [ ] [0-strace_is_your_friend.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp): Using `strace`, find out why Apache is returning a 500 error. Once you find the issue, fix it and then automate it using Puppet (instead of using Bash as you were previously doing).

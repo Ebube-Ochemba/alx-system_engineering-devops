@@ -1,17 +1,12 @@
 #!/usr/bin/env bash
 # A Bash script that configures Nginx server to run as nginx user and listen on port 8080.
 
-# Create nginx user if it does not exist
-if ! id -u nginx > /dev/null 2>&1; then
-    useradd -r -s /sbin/nologin nginx
-fi
-
 # Define Nginx configuration files
 NGINX_CONF="/etc/nginx/nginx.conf"
 SITE_DEFAULT_CONF="/etc/nginx/sites-available/default"
 
 # Set permissions
-chmod 744 /etc/nginx/nginx.conf
+chmod 744 $NGINX_CONF
 
 # Backup the original configuration files
 sudo cp $NGINX_CONF "${NGINX_CONF}.bak"

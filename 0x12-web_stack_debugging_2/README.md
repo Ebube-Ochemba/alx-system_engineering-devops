@@ -14,4 +14,4 @@ I learnt about user privileges and debugging `nginx` configuration.
 - [x] [1-run_nginx_as_nginx](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x12-web_stack_debugging_2/1-run_nginx_as_nginx): A Bash script that configures a container as follows:
   - `nginx` must be running as `nginx` user
   - `nginx` must be listening on all active IPs on port `8080`.
-- [ ] [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x12-web_stack_debugging_2/):
+- [x] [100-fix_in_7_lines_or_less] [100-fix_in_7_lines_or_less](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x12-web_stack_debugging_2/100-fix_in_7_lines_or_less): Refine the previous task and fix it in 7 lines or less.

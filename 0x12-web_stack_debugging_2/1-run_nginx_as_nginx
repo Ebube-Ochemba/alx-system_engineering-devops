@@ -9,13 +9,16 @@ fi
 NGINX_CONF="/etc/nginx/nginx.conf"
 SITE_DEFAULT_CONF="/etc/nginx/sites-available/default"
 
+# Set permissions
+chmod 744 /etc/nginx/nginx.conf
+
 # Backup the original configuration files
 sudo cp $NGINX_CONF "${NGINX_CONF}.bak"
 sudo cp $SITE_DEFAULT_CONF "${SITE_DEFAULT_CONF}.bak"
 
 # Update the configuration to run as nginx user and listen on port 8080
 sudo sed -i 's/user\s*nginx;/user nginx;/' $NGINX_CONF
-sudo sed -i 's/listen\s*80;/listen 8080;/' /etc/nginx/sites-available/default
+sudo sed -i 's/listen\s*80;/listen 8080;/' $SITE_DEFAULT_CONF
 
 # Stop any running Apache services to free up the port
 pkill apache2

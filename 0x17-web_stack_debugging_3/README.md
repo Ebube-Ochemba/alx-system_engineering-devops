@@ -5,7 +5,7 @@
 ## Summary
 
 I learnt about `tmux` and `strace` and how to use them to debug web applications.
-These are the steps i took for the project.
+These are the steps I took for the project.
 - Start the `tmux` session: `tmux`
 - List Apache Processes (parent/child): `ps aux | grep apache`
 - Attach strace to "the" Apache Process: `sudo strace -p <PID>`
@@ -31,6 +31,8 @@ root@07778635a2a2:/#
   - search for the line number(s) containing the typo: `grep -n "phpp" <PATH>`
   - open the file and make the necessary correction. (from `.phpp` to `.php`)
 - write puppet manifest to fix the typo error: [`0-strace_is_your_friend.pp`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp)
+
+Here's a video I watched, that's on how strace can be used to debug an applications. [YouTube](https://youtu.be/mBfurelWwPQ?si=bWtkFv3_RUKyqKwe)
 
 ## Files
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# A Bash script that configures Nginx server to run as nginx user and listen on port 8080.
 
 # Create nginx user if it does not exist
 if ! id -u nginx > /dev/null 2>&1; then

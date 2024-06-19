@@ -16,6 +16,17 @@ These are the steps i took for the project.
   - look for error messages or failed system calls
   - in this case, `error: No such file or directory` related to a `.phpp` file, a typo
 - Search for the files containing the typo error: `grep -ro "phpp" <PATH>`
+```sh
+root@07778635a2a2:/# grep -ro "phpp" /var/www/html            
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-includes/js/zxcvbn.min.js:phpp
+/var/www/html/wp-settings.php:phpp
+root@07778635a2a2:/#
+```
 - Inspect "the" file and fix the typo occurences:
   - search for the line number(s) containing the typo: `grep -n "phpp" <PATH>`
   - open the file and make the necessary correction. (from `.phpp` to `.php`)

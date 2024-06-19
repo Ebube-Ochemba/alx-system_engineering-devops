@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # A Bash script that configures Nginx server to run as nginx user and listen on port 8080.
-chmod 744 $NGINX_CONF
+chmod 744 /etc/nginx/nginx.conf
 sudo sed -i 's/user\s*nginx;/user nginx;/' /etc/nginx/nginx.conf
 sudo sed -i  -e "s/ 80 / 8080 /" -e "s/:80 /:8080 /" /etc/nginx/sites-available/default
 sudo pkill apache2

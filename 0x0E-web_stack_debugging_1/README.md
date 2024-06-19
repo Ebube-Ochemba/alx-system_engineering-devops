@@ -10,5 +10,5 @@ I learnt about...
 
 > Each file contains the solution to a task in the project.
 
-- [ ] [0-nginx_likes_port_80](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/0-nginx_likes_port_80):
+- [x] [0-nginx_likes_port_80](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/0-nginx_likes_port_80): ABash script that configures `nginx` so it to listen on port `80`.
 - [ ] [](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/):

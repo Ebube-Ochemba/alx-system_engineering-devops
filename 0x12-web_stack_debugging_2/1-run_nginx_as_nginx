@@ -21,7 +21,7 @@ sudo sed -i 's/user\s*nginx;/user nginx;/' $NGINX_CONF
 sudo sed -i 's/listen\s*80;/listen 8080;/' $SITE_DEFAULT_CONF
 
 # Stop any running Apache services to free up the port
-pkill apache2
+sudo pkill apache2
 
 # Restart Nginx service
 sudo -u nginx service nginx restart

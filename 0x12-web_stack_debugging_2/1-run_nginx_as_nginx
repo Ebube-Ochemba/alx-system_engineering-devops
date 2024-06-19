@@ -14,7 +14,7 @@ sudo cp $SITE_DEFAULT_CONF "${SITE_DEFAULT_CONF}.bak"
 
 # Update the configuration to run as nginx user and listen on port 8080
 sudo sed -i 's/user\s*nginx;/user nginx;/' $NGINX_CONF
-sudo sed -i 's/listen\s*80;/listen 8080;/' $SITE_DEFAULT_CONF
+sudo sed -i  -e "s/ 80 / 8080 /" -e "s/:80 /:8080 /" $SITE_DEFAULT_CONF
 
 # Stop any running Apache services to free up the port
 sudo pkill apache2

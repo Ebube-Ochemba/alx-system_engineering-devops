@@ -17,7 +17,7 @@
 - **14:20 GMT**: No issues were found in the Apache configuration; the investigation moved to the PHP and application logs.
 - **14:40 GMT**: strace was attached to the running Apache process to identify the system calls and errors being generated.
 - **15:00 GMT**: The strace output indicated a "No such file or directory" error related to a `.phpp` file.
-- **15:10 GMT**: The team searched for files containing .phpp and identified the typo in `wp-settings.php`.
+- **15:10 GMT**: The team searched for files containing `.phpp` and identified the typo in `wp-settings.php`.
 - **15:20 GMT**: The typo was corrected manually, and the Apache server was restarted. The website came back online.
 - **15:30 GMT**: Further investigation to ensure no other instances of the typo existed.
 - **16:00 GMT**: Automation of the fix using Puppet to prevent future occurrences.

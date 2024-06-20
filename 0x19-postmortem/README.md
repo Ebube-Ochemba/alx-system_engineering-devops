@@ -24,6 +24,10 @@
 - **16:30 GMT**: Full resolution confirmed, and services were fully restored.
 
 ## 🔨⚰ Root cause and Resolution 🩹
+<p align="center">
+    <img src="./images/arrow.jpeg" /> 
+</p>
+
 - **Root Cause**: The root cause was a typo in the wp-settings.php file where class-wp-locale.phpp was mistakenly written instead of class-wp-locale.php. This typo caused the PHP interpreter to fail when including the file, resulting in a 500 Internal Server Error.
 - **Resolution**:
     - The typo was identified by attaching strace to the Apache process and observing the "No such file or directory" error.

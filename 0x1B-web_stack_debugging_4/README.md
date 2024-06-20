@@ -4,7 +4,7 @@
 
 ## Summary
 
-I learnt about debugging our web stack using `ApacheBench` for benchmark tests and how to improve our performance. These an overview of the steps I took for the project.
+I learnt about debugging our web stack using `ApacheBench` for benchmark tests and how to improve our performance. These an overview of the steps I took for the project (Task #0).
 - Run benchmark test: `ab -c 100 -n 2000 localhost/`
   - Optional: use `tmux` and split the terminal window into two panes and monitor memory and CPU usage in one terminal while you run benchmark in another terminal.
 - **Understand the Benchmark Results**:
@@ -36,7 +36,7 @@ root@69d6aeb63cf8:/# sudo tail -n 100 /var/log/nginx/error.log
   - First check the current limits: `ulimit -a` or `ulimit -n`
     - This value is associated with the *soft limit*. It can be adjusted by the current user within the constraints of the *hard limit*. See `/etc/security/limits.conf`.
   - Then edit/update the Nginx Configuration File appropriately: `/etc/default/nginx`
-    - update `ULIMIT="-n xxx"` to a value that is high enough to accommodate the number of failed requests, but not higher than the *hard limit*.
+    - update `ULIMIT="-n xxx"` to a value that is high enough to accommodate the number of failed requests, but not higher than the *hard limit*. (from `15` to `4096`)
   - Restart Nginx: `service nginx restart`
 
 ## Files
@@ -44,3 +44,4 @@ root@69d6aeb63cf8:/# sudo tail -n 100 /var/log/nginx/error.log
 > Each file contains the solution to a task in the project.
 
 - [x] [0-the_sky_is_the_limit_not.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4/0-the_sky_is_the_limit_not.pp): In this case, I will make 2000 requests to my server with 100 requests at a time. We can see that 943 requests failed, let’s fix our stack so that we get to 0.
+- [x] [1-user_limit.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4/1-user_limit.pp): Change the OS configuration so that it is possible to login with the `holberton` user and open a file without any error message.

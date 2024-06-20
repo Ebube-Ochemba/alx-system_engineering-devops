@@ -30,12 +30,17 @@ root@69d6aeb63cf8:/# sudo tail -n 100 /var/log/nginx/error.log
 2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
 2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
 ```
-> This was causing the server to be unable to accept new connections and serve files, which explains the high number of failed requests. (`873 out of 2000`)
-xxx
+> This was causing the server to be unable to accept new connections and serve files, which explains the high number of failed requests. (`873 out of 2000`).
+
 - **Review Nginx Configuration**:
+  - First check the current limits: `ulimit -a` or `ulimit -n`
+    - This value is associated with the *soft limit*. It can be adjusted by the current user within the constraints of the *hard limit*. See `/etc/security/limits.conf`.
+  - Then edit/update the Nginx Configuration File appropriately: `/etc/default/nginx`
+    - update `ULIMIT="-n xxx"` to a value that is high enough to accommodate the number of failed requests, but not higher than the *hard limit*.
+  - Restart Nginx: `service nginx restart`
 
 ## Files
 
 > Each file contains the solution to a task in the project.
 
-- [ ] [0-the_sky_is_the_limit_not.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4/0-the_sky_is_the_limit_not.pp): In this case, I will make 2000 requests to my server with 100 requests at a time. We can see that 943 requests failed, let’s fix our stack so that we get to 0.
+- [x] [0-the_sky_is_the_limit_not.pp](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4/0-the_sky_is_the_limit_not.pp): In this case, I will make 2000 requests to my server with 100 requests at a time. We can see that 943 requests failed, let’s fix our stack so that we get to 0.

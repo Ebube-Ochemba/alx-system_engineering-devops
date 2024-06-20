@@ -2,8 +2,8 @@
 > Web stack debugging #3
 
 <p float="left">
-  <img src="./images/coroner.jpg" width="100" />
-  <img src="./images/arrow.jpeg" width="100" /> 
+  <img src="./images/coroner.jpg" />
+  <img src="./images/arrow.jpeg" /> 
 </p>
 
 ## 📝 Issue summary 📋

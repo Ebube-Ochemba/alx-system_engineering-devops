@@ -20,4 +20,5 @@ exec { 'reload_limits':
   command     => 'ulimit -n 2048',
   refreshonly => true,
   subscribe   => Exec['Correct file descriptor limits'],
+  path        => '/usr/bin:/bin',
 }

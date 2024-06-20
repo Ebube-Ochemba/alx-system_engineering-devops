@@ -30,7 +30,7 @@ root@69d6aeb63cf8:/# sudo tail -n 100 /var/log/nginx/error.log
 2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
 2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
 ```
->This is causing the server to be unable to accept new connections and serve files, which explains the high number of failed requests.
+> This was causing the server to be unable to accept new connections and serve files, which explains the high number of failed requests. (`873 out of 2000`)
 xxx
 - **Review Nginx Configuration**:
 

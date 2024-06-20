@@ -27,7 +27,7 @@ root@07778635a2a2:/# grep -ro "phpp" /var/www/html
 /var/www/html/wp-settings.php:phpp
 root@07778635a2a2:/#
 ```
-- Inspect "the" file and fix the typo occurences:
+- Inspect "the" file and fix the typo occurence(s):
   - search for the line number(s) containing the typo: `grep -n "phpp" <PATH>`
   - open the file and make the necessary correction. (from `.phpp` to `.php`)
 - write puppet manifest to fix the typo error: [`0-strace_is_your_friend.pp`](https://github.com/Ebube-Ochemba/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp)

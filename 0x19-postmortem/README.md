@@ -8,7 +8,7 @@
 ## 📝 Issue summary 📋
 - **Duration of Outage**: April 15, 2024, 14:00 - 16:30 GMT
 - **Impact**: The company website was returning a 500 Internal Server Error. Users were unable to access the site or any of its services during this period. Approximately 90% of the users were affected.
-- **Root Cause**: The root cause was a typographical error in the PHP configuration files, specifically a typo (.phpp instead of .php) in the wp-settings.php file.
+- **Root Cause**: The root cause was a typographical error in the PHP configuration files, specifically a typo (`.phpp` instead of `.php`) in the `wp-settings.php` file.
 
 ## ⏲ Timeline ⏱
 - **14:00 GMT**: Issue detected through a monitoring alert indicating that the website was down.
@@ -16,8 +16,8 @@
 - **14:10 GMT**: Initial investigation began by checking the Apache logs and configuration files.
 - **14:20 GMT**: No issues were found in the Apache configuration; the investigation moved to the PHP and application logs.
 - **14:40 GMT**: strace was attached to the running Apache process to identify the system calls and errors being generated.
-- **15:00 GMT**: The strace output indicated a "No such file or directory" error related to a .phpp file.
-- **15:10 GMT**: The team searched for files containing .phpp and identified the typo in wp-settings.php.
+- **15:00 GMT**: The strace output indicated a "No such file or directory" error related to a `.phpp` file.
+- **15:10 GMT**: The team searched for files containing .phpp and identified the typo in `wp-settings.php`.
 - **15:20 GMT**: The typo was corrected manually, and the Apache server was restarted. The website came back online.
 - **15:30 GMT**: Further investigation to ensure no other instances of the typo existed.
 - **16:00 GMT**: Automation of the fix using Puppet to prevent future occurrences.
@@ -28,7 +28,7 @@
     <img src="./images/arrow.jpeg" /> 
 </p>
 
-- **Root Cause**: The root cause was a typo in the wp-settings.php file where class-wp-locale.phpp was mistakenly written instead of class-wp-locale.php. This typo caused the PHP interpreter to fail when including the file, resulting in a 500 Internal Server Error.
+- **Root Cause**: The root cause was a typo in the `wp-settings.php` file where `class-wp-locale.phpp` was mistakenly written instead of `class-wp-locale.php`. This typo caused the PHP interpreter to fail when including the file, resulting in a 500 Internal Server Error.
 - **Resolution**:
     - The typo was identified by attaching strace to the Apache process and observing the "No such file or directory" error.
     - Once the typo was located, it was manually corrected, and the Apache server was restarted to restore functionality.

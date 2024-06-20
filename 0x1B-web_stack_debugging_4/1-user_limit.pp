@@ -9,7 +9,7 @@ file { '/etc/security/limits.conf':
 
 # Fix the limits for the 'nofile' descriptor in /etc/security/limits.conf
 exec { 'Correct file descriptor limits':
-  command => 'sudo sed -i -e "s/nofile 5/nofile 2048/" -e "s/nofile 4/nofile 2048/" /etc/security/limits.conf',
+  command => 'sudo sed -i -e "s/nofile 5/nofile 30000/" -e "s/nofile 4/nofile 10000/" /etc/security/limits.conf',
   onlyif  => 'grep -qE "nofile [45]" /etc/security/limits.conf',
   path    => '/usr/bin:/bin',
   require => File['/etc/security/limits.conf'],
@@ -17,7 +17,7 @@ exec { 'Correct file descriptor limits':
 
 # Reload the limits to apply changes
 exec { 'reload_limits':
-  command     => 'ulimit -n 30000',
+  command     => 'ulimit -n ',
   refreshonly => true,
   subscribe   => Exec['Correct file descriptor limits'],
 }

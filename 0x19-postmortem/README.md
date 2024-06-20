@@ -1,6 +1,11 @@
 # Postmortem
 > Web stack debugging #3
 
+<p float="left">
+  <img src="/images/coroner.jpg" width="100" />
+  <img src="/images/arrow.jpeg" width="100" /> 
+</p>
+
 ## 📝 Issue summary 📋
 - **Duration of Outage**: April 15, 2024, 14:00 - 16:30 GMT
 - **Impact**: The company website was returning a 500 Internal Server Error. Users were unable to access the site or any of its services during this period. Approximately 90% of the users were affected.

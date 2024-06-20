@@ -4,7 +4,35 @@
 
 ## Summary
 
-I learnt about debugging our web stack using `ApacheBench` for benchmarking.
+I learnt about debugging our web stack using `ApacheBench` for benchmark tests and how to improve our performance. These an overview of the steps I took for the project.
+- Run benchmark test: `ab -c 100 -n 2000 localhost/`
+  - Optional: use `tmux` and split the terminal window into two panes and monitor memory and CPU usage in one terminal while you run benchmark in another terminal.
+- **Understand the Benchmark Results**:
+  - Failed Requests: `xxx` out of `xxxx` requests failed.
+  - Non-2xx Responses: `xxxx` responses were not in the 200-299 range, indicating many requests did not succeed.
+- **Examine Logs**:
+  - Access Logs: These logs show details of all incoming requests.
+    - `sudo tail -n 100 /var/log/nginx/access.log`
+  - Error Logs: These logs show any errors Nginx encountered while handling requests.
+    - `sudo tail -n 100 /var/log/nginx/error.log`
+- **Check System Resource Usage**:
+  - CPU Usage: `top` or `htop`
+  - Memory Usage: `free -m`
+  - Disk Usage: `df -h`
+> At this point, the error logs, indicated that the Nginx server was hitting the limit for the number of "open files":
+```sh
+root@69d6aeb63cf8:/# sudo tail -n 100 /var/log/nginx/error.log
+2024/06/20 16:09:52 [crit] 35#0: *5940 open() "/usr/share/nginx/html/index.html" failed (24: Too many open files), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.0", host: "localhost"
+2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
+...
+2024/06/20 16:09:52 [crit] 33#0: *6000 open() "/usr/share/nginx/html/index.html" failed (24: Too many open files), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.0", host: "localhost"
+2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
+2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
+2024/06/20 16:09:52 [crit] 35#0: accept4() failed (24: Too many open files)
+```
+>This is causing the server to be unable to accept new connections and serve files, which explains the high number of failed requests.
+xxx
+- **Review Nginx Configuration**:
 
 ## Files
 
